@@ -1,0 +1,78 @@
+body {
+   margin: 0;
+   padding: 0;
+   height: 100vh;
+   display: flex;
+   background-image: linear-gradient(
+      135deg,
+      #9bb5fd,
+      #3383fb,
+      rgb(206, 156, 250),
+      rgb(233, 208, 255)
+   );
+}
+section {
+   display: flex;
+   width: 100%;
+}
+
+form {
+   margin-top: 10%;
+   display: flex;
+   text-align: center;
+   width: 100%;
+   justify-content: center;
+}
+
+.container {
+   width: 30%;
+   height: max-content;
+   padding: 4rem;
+   background-color: whitesmoke;
+   border-radius: 1rem;
+}
+
+input {
+   width: 40px;
+   height: 40px;
+   margin: 10px;
+   border-top: 0px solid;
+   border-right: 0px solid;
+   border-left: 0px solid;
+   border-bottom: 3px solid rgb(118, 77, 2);
+   border-radius: 5px;
+   background-color: wheat;
+   font-size: x-large;
+   text-align: center;
+}
+input:focus {
+   outline: none;
+   background-color: gainsboro;
+}
+button {
+   margin-top: 8%;
+   background-color: gainsboro;
+   border: 0px solid;
+   border-radius: 8px;
+   font-size: 1.5rem;
+   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+   cursor: pointer;
+   pointer-events: none;
+   transition: all 0.2s ease-in-out;
+}
+
+button.active {
+   background-color: rgb(245, 163, 55);
+   pointer-events: auto;
+}
+
+button:hover {
+   background-color: rgb(244, 143, 10);
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+   display: none;
+}
+
+/* #4070f4 */
